@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.button-container {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: #218838;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: step-counter;
+}
+
+li {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    padding-left: 40px;
+}
+
+li::before {
+    counter-increment: step-counter;
+    content: counter(step-counter) ".";
+    font-weight: bold;
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 18px;
+    position: absolute;
+    left: 10px;
+}
+
+.edit-button, .remove-button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.edit-button {
+    background-color: #ffc107;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+.remove-button {
+    background-color: #dc3545;
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+}
